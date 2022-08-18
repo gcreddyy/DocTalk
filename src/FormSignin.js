@@ -15,16 +15,16 @@ const FormSignup = ({ submitForm }) => {
         <h1>Welcome back, User!</h1>
 
         <div className="form-inputs">
-          <label className="form-label">Email</label>
+          <label className="form-label">Username</label>
           <input
             className="form-input"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            value={values.email}
+            type="text"
+            name="username"
+            placeholder="Enter your username"
+            value={values.username}
             onChange={handleChange}
           />
-          {errors.email && <p>{errors.email}</p>}
+          {errors.username && <p>{errors.username}</p>}
         </div>
         <div className="form-inputs">
           <label className="form-label">Password</label>
